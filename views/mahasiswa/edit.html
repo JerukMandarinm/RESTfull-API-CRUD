@@ -1,0 +1,20 @@
+<h2 class="text-xl font-bold mb-4">Edit Mahasiswa</h2>
+<form method="POST" action="/mahasiswa/update/{{id}}">
+    <div class="mb-3">
+        <label class="block mb-1">Nama</label>
+        <input name="nama" value="{{nama}}" class="border p-2 w-full rounded">
+    </div>
+    <div class="mb-3">
+        <label class="block mb-1">Jurusan</label>
+        <select name="jurusan_id" class="border p-2 w-full rounded">
+            {{options}}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="block mb-1">Angkatan</label>
+        <input name="angkatan" value="{{angkatan}}" class="border p-2 w-full rounded">
+    </div>
+    <button class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600">
+        Update Data
+    </button>
+</form>
