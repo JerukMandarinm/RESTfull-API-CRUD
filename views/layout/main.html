@@ -1,0 +1,21 @@
+<div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold text-gray-800">Data Jurusan</h2>
+    <a href="/jurusan/create" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-sm hover:bg-blue-700 transition flex items-center">
+        <span class="mr-2">+</span> Tambah Jurusan
+    </a>
+</div>
+
+<div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+    <table class="w-full text-left border-collapse">
+        <thead class="bg-gray-50">
+            <tr>
+                <th class="p-4 font-semibold text-gray-700 border-b text-center">ID</th>
+                <th class="p-4 font-semibold text-gray-700 border-b text-center">Nama Jurusan</th>
+                <th class="p-4 font-semibold text-gray-700 border-b text-center">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{rows}}
+        </tbody>
+    </table>
+</div>
